@@ -16,12 +16,18 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "autoprefixer": "^10.1.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-postcss": "^3.4.0",
     "gatsby-plugin-sharp": "^2.11.1",
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-sharp": "^2.9.0",
+    "postcss": "^8.2.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^2.0.2",
+    "typeface-spartan": "^1.1.13"
   }
 }

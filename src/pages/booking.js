@@ -6,7 +6,7 @@ const IndexPage = () => {
   return (
     <main>
         <Header/>
-        <h1 className="bg-beaver font-heading-bold font-thin text-5xl text-center">Home</h1>
+        <h1 className="bg-beaver font-heading-bold font-thin text-5xl text-center">Reservation</h1>
         <ReservationCTA/>
         <Footer/>
       </main>
