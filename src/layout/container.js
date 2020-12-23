@@ -2,7 +2,11 @@ import * as React from 'react'
 
 const Container = (props) => {
     return(
-        <div className={`container w-77 m-auto ${props.classProperties}`}>
+        <div className={`
+                        container w-10.5/12 m-auto ${props.classProperties} text-center
+                        tablet:text-left
+                        laptop:w-77
+                        `}>
             {props.children}
         </div>
 

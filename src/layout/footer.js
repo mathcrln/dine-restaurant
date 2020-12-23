@@ -5,7 +5,7 @@ import Container from '../layout/container'
 const Footer = () => {
     return(
         <footer className="bg-codGray min-h-full py-12 text-white">
-            <Container classProperties="grid grid-cols-3 gap-2 ">
+            <Container classProperties="grid laptop:grid-cols-3 laptop:gap-2">
             <Logo/>
                 <div className="text-heading--4">
                     MARTHWAITE, SEDBERGH <br/>

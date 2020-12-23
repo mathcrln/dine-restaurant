@@ -18,24 +18,38 @@
 
 @layer components {
     .text-body--1 {
-        @apply font-main font-normal text-lg tracking-tight leading-7;
+        @apply font-main font-normal text-lg tracking-tight leading-7.5;
     }
     .textBody--2 {
         @apply tracking-normal;
     }
-    .text-heading--4 {
+    .text-heading--1 {
+        @apply font-light antialiased tracking-tight text-4.25xl leading-10.3
+        laptop:text-6xl laptop:leading-72 laptop:tracking-tightest;
+    }
+    .text-heading--2 {
+        @apply font-bold tracking-tighter antialiased text-3.5xl
+        desktop:text-4.5xl;
+    }
+    .text-heading--3 {
         @apply font-semibold text-sm tracking-wide leading-7 antialiased;
     }
+    .text-heading--4 {
+        @apply font-semibold text-base tablet:text-sm tracking-wide leading-7 antialiased;
+    }
     .btn {
-        @apply cursor-pointer border-solid border py-4 px-13 rounded-none focus:ring-0 text-heading--4;
+        @apply cursor-pointer border-solid border rounded-none focus:ring-0 text-heading--4 py-6 px-17 
+        tablet:py-4 tablet:px-13;
     }
 
     .btn--onLight {
         @apply border-codGray text-codGray hover:bg-codGray hover:text-white;
     }
     
-
     .btn--onDark {
         @apply border-white text-white hover:bg-white hover:text-codGray;
+    }
+    .mobile-center {
+        @apply flex flex-col items-center justify-center;
     }
 }

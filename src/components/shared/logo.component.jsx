@@ -5,7 +5,7 @@ import LogoDine from '../../assets/logo.svg'
 const Logo = () => {
     return(
         <Link to="/">
-            <img src={LogoDine} alt="Dine Restaurant" className="logo"/>
+            <img src={LogoDine} alt="Dine Restaurant" className="logo w-max-w m-auto tablet:m-0"/>
         </Link>
     )
 
