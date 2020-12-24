@@ -48,9 +48,12 @@ module.exports = {
         'homepage-heeader': "url('../assets/homepage/hero-bg-desktop.jpg')",
         'homepage-heeader-tablet': "url('../assets/homepage/hero-bg-tablet.jpg')",
         'homepage-heeader-mobile': "url('../assets/homepage/hero-bg-mobile.jpg')",
-        'reservation-cta-image': "url('../assets/homepage/ready-bg-desktop.jpg')",
+        'reservation-cta-desktop': "url('../assets/homepage/ready-bg-desktop.jpg')",
+        'reservation-cta-mobile': "url('../assets/homepage/ready-bg-mobile.jpg')",
+        'reservation-cta-tablet': "url('../assets/homepage/ready-bg-tablet.jpg')",
        }),
        fontSize:{
+         '15sm': '0.9375rem',
          '3.5xl': '2rem',
          '4.25xl': '2.36rem',
          '4.5xl': '2.5rem'

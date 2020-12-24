@@ -4,10 +4,10 @@ import Container from '../layout/container'
 
 const Footer = () => {
     return(
-        <footer className="bg-codGray min-h-full py-12 text-white">
+        <footer className="bg-codGray min-h-full py-20 text-white">
             <Container classProperties="grid laptop:grid-cols-3 laptop:gap-2">
             <Logo/>
-                <div className="text-heading--4">
+                <div className="text-heading--4 mt-12 mb-8 laptop:my-0">
                     MARTHWAITE, SEDBERGH <br/>
                     CUMBRIA<br/>
                     +00 44 123 4567

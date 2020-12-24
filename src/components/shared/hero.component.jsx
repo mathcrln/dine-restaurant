@@ -5,10 +5,11 @@ import Button from './button.component'
 
 const Hero = () => {
     return(
-        <header className="bg-codGray text-white  bg-no-repeat bg-cover h-90
+        <header className="bg-codGray text-white bg-center bg-no-repeat bg-cover pb-44 laptop:h-90
                             bg-homepage-heeader-mobile
-                            desktop:bg-homepage-heeader 
-                            tablet:bg-homepage-heeader-tablet"
+                            laptop:bg-homepage-heeader 
+                            tablet:bg-homepage-heeader-tablet 
+                            "
         >
             <Container>
                 <Header/>
