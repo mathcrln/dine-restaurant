@@ -1,17 +1,34 @@
-import * as React from "react"
-import Footer from '../layout/footer'
-import ReservationCTA from '../components/homepage/reservations-cta.component'
-import Hero from '../components/shared/hero.component'
+import * as React from "react";
+import { Helmet } from "react-helmet";
+import Footer from "../layout/footer";
+import Hero from "../components/shared/hero.component";
+import ReservationSection from "../components/booking/reservation-section.component";
 
-const IndexPage = () => {
-  return (
-    <main>
-        <Hero/>
-        <h1 className="bg-beaver font-heading-bold font-thin text-5xl text-center">Reservation</h1>
-        <ReservationCTA/>
-        <Footer/>
-      </main>
-  )
-}
+const BookingPage = () => {
+	return (
+		<div>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>Booking | Dine Restaurant</title>
+				<link
+					rel="canonical"
+					href="https://dine-restaurant.mathcrln.vercel.app/"
+				/>
+			</Helmet>
+			<main>
+				<Hero
+					page="booking"
+					heroTitle="Reservations"
+					heroDescription="We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you."
+					heroButton="Reserve place"
+					heroButtonDestination="/"
+					mobilePadding="20"
+				/>
+				<ReservationSection />
+				<Footer />
+			</main>
+		</div>
+	);
+};
 
-export default IndexPage
+export default BookingPage;
