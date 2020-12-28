@@ -16,13 +16,20 @@ const Feature = ({ title, description, srcImage, orientation }) => {
 				} laptop:flex-row`}
 			>
 				<div className="laptop:w-1/2 max-w-max min-w-min m-auto">
-					<img
+
+				<picture>
+					<source srcset={laptop} media="(min-width: 1040px)"/>
+					<source srcset={tablet} media="(min-width: 640px)"/>
+					<img src={mobile} alt="" className={`${isRight ? "laptop:-mb-18" : "-mt-18"}`}/>
+				</picture>
+					{/* <img
 						src={mobile}
-						srcSet={`${mobile} 327w, ${tablet} 573w, ${laptop} 540w`}
-						sizes="(min-width: 1024px) 540px, (min-width: 640px) 573px, 327px"
+						srcSet={`${mobile} 654w, ${tablet} 1146w, ${laptop} 1080w`}
+						sizes="(max-width: 640px) 100px"
+						// sizes="(min-width: 1024px) 540px, (min-width: 640px) 573px, 327px"
 						alt=""
 						className={`${isRight ? "laptop:-mb-18" : "-mt-18"}`}
-					/>
+					/> */}
 				</div>
 				{/* <div className={`flex flex-col justify-items-start items-center laptop:items-start laptop:w-1/2  ${isRight? "mt-50 laptop:pr-27.5" : " mt-44 laptop:pl-27.5" }`}>
                     <img src={Divider} alt="" className="mb-12"/>
