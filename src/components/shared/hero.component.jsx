@@ -14,7 +14,7 @@ const Hero = ({
 }) => {
 	return (
 		<section
-			className={`laptop:pt-16 bg-codGray text-white bg-no-repeat bg-cover bg-${page}-hero-mobile laptop:bg-${page}-hero-desktop tablet:bg-${page}-hero-tablet ${classProperties}`}
+			className={`laptop:pt-16 bg-codGray text-white bg-no-repeat bg-cover bg-homepage-hero-mobile laptop:bg-homepage-hero-desktop tablet:bg-${page}-hero-tablet ${classProperties}`}
 		>
 			<Container>
 				<Header />
