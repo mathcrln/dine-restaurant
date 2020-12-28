@@ -3,53 +3,71 @@
 @tailwind utilities;
 
 @layer base {
-    body{
-        @apply font-main;
-    }
+	body {
+		@apply font-main;
+	}
 
-    h2{
-        @apply text-6xl font-light tracking-tightest leading-72;
-    }
-    h3{
-        @apply text-4xl;
-    }
-
+	h2 {
+		@apply text-6xl font-light tracking-tightest leading-72;
+	}
+	h3 {
+		@apply text-4xl;
+	}
 }
 
 @layer components {
-    .text-body--1 {
-        @apply font-main font-normal text-lg tracking-tight leading-7.5;
-    }
-    .text-body--2 {
-        @apply font-main font-normal text-15sm tracking-normal leading-7;
-    }
-    .text-heading--1 {
-        @apply font-light antialiased tracking-tight text-4.25xl leading-10.3
+	.text-body--1 {
+		@apply font-main font-normal text-15px laptop:text-lg tracking-tight leading-6.5 laptop:leading-7.5;
+	}
+	.text-body--2 {
+		@apply font-main font-normal text-15sm tracking-normal leading-7;
+	}
+	.text-heading--1 {
+		@apply font-light antialiased tracking-tight text-32px leading-10.3
         laptop:text-6xl laptop:leading-72 laptop:tracking-tightest;
-    }
-    .text-heading--2 {
-        @apply font-bold tracking-tighter antialiased text-3.5xl
+	}
+	.text-heading--2 {
+		@apply font-bold tracking-tighter antialiased text-3.5xl
         desktop:text-4.5xl;
-    }
-    .text-heading--3 {
-        @apply font-main font-bold text-lg tracking-tight leading-7 antialiased;
-    }
-    .text-heading--4 {
-        @apply font-semibold text-sm tablet:text-sm tracking-wide leading-7 antialiased;
-    }
-    .btn {
-        @apply cursor-pointer border-solid border rounded-none focus:ring-0 text-heading--4 py-6 px-17 
-        tablet:py-4 tablet:px-13;
-    }
+	}
+	.text-heading--3 {
+		@apply font-main font-bold text-lg tracking-tight leading-7 antialiased;
+	}
+	.text-heading--4 {
+		@apply font-semibold text-sm tablet:text-sm tracking-wide leading-7 antialiased;
+	}
+	.btn {
+		@apply cursor-pointer border-solid border rounded-none focus:ring-0 text-heading--4 py-4 px-12 
+        tablet:py-4 tablet:px-13 focus:outline-none;
+	}
 
-    .btn--onLight {
-        @apply border-codGray text-codGray hover:bg-codGray hover:text-white;
-    }
-    
-    .btn--onDark {
-        @apply border-white text-white hover:bg-white hover:text-codGray;
-    }
-    .mobile-center {
-        @apply flex flex-col items-center justify-center;
-    }
+	.btn--onLight {
+		@apply border-codGray text-white bg-codGray hover:text-codGray hover:bg-transparent;
+	}
+
+	.btn--onDark {
+		@apply border-white text-white hover:bg-white hover:text-codGray;
+	}
+	.mobile-center {
+		@apply flex flex-col items-center justify-center;
+	}
+
+	.form-input {
+		@apply border-b border-codGray h-14 focus:outline-none ring-0 text-lg;
+	}
+
+	.form-line {
+		@apply w-full mb-5 box-border;
+	}
+	.input-in-group {
+		@apply border-b border-codGray h-12 focus:outline-none ring-0 text-lg w-1/4 text-center pl-0 box-content;
+	}
+}
+
+@layer utilities {
+	input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
 }

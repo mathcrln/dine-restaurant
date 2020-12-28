@@ -1,21 +1,16 @@
-import * as React from 'react'
-import { Link } from "gatsby"
+import * as React from "react";
 
-const Button = ({callToAction = "Empty button", destination, onLight}) => {
-    let classProperties;
-    onLight === true ? 
-        classProperties = "btn btn--onLight" : 
-        classProperties = "btn btn--onDark";
+const Button = ({
+	callToAction = "Empty button",
+	onLight,
+	classProperties,
+}) => {
+	let properties;
+	onLight === true
+		? (properties = `btn btn--onLight ${classProperties}`)
+		: (properties = `btn btn--onDark ${classProperties}`);
 
-    return(
-        <Link to={destination}>
-            <button className={classProperties}>
-                {callToAction.toUpperCase()}
-            </button>
-        </Link>
+	return <button className={properties}>{callToAction.toUpperCase()}</button>;
+};
 
-    )
-
-}
-
-export default Button
+export default Button;

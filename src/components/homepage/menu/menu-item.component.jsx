@@ -7,7 +7,7 @@ const MenuItem = ({name, description, srcImage}) => {
         <div className="menu-item flex flex-col tablet:flex-row justify-center items-center">
             <div className="mb-10 tablet:mr-10 tablet:mb-0">
                 <img 
-                    srcset={`${mobile} 327w, ${desktopTablet} 128w`}
+                    srcSet={`${mobile} 327w, ${desktopTablet} 128w`}
                     sizes="(min-width: 640px) 128px, 327px"
                     src={desktopTablet} 
                     alt=""

@@ -21,8 +21,9 @@ const BookingPage = () => {
 					heroTitle="Reservations"
 					heroDescription="We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you."
 					heroButton="Reserve place"
+					heroButtonHide="tablet"
 					heroButtonDestination="/"
-					mobilePadding="20"
+					classProperties="pt-14 pb-44 laptop:h-150"
 				/>
 				<ReservationSection />
 				<Footer />
