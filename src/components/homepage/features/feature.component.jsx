@@ -16,12 +16,15 @@ const Feature = ({ title, description, srcImage, orientation }) => {
 				} laptop:flex-row`}
 			>
 				<div className="laptop:w-1/2 max-w-max min-w-min m-auto">
-
-				<picture>
-					<source srcset={laptop} media="(min-width: 1040px)"/>
-					<source srcset={tablet} media="(min-width: 640px)"/>
-					<img src={mobile} alt="" className={`${isRight ? "laptop:-mb-18" : "-mt-18"}`}/>
-				</picture>
+					<picture>
+						<source srcSet={laptop} media="(min-width: 1040px)" />
+						<source srcSet={tablet} media="(min-width: 640px)" />
+						<img
+							src={mobile}
+							alt=""
+							className={`${isRight ? "laptop:-mb-18" : "-mt-18"}`}
+						/>
+					</picture>
 					{/* <img
 						src={mobile}
 						srcSet={`${mobile} 654w, ${tablet} 1146w, ${laptop} 1080w`}

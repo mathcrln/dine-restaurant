@@ -2,6 +2,7 @@ import * as React from "react";
 
 const Button = ({
 	callToAction = "Empty button",
+	type = "button",
 	onLight,
 	classProperties,
 }) => {
@@ -10,7 +11,11 @@ const Button = ({
 		? (properties = `btn btn--onLight ${classProperties}`)
 		: (properties = `btn btn--onDark ${classProperties}`);
 
-	return <button className={properties}>{callToAction.toUpperCase()}</button>;
+	return (
+		<button className={properties} type={type}>
+			{callToAction.toUpperCase()}
+		</button>
+	);
 };
 
 export default Button;

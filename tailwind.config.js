@@ -70,6 +70,7 @@ module.exports = {
 				"booking-hero-mobile": "url('../assets/booking/hero-bg-mobile@2x.jpg')",
 			}),
 			fontSize: {
+				xxs: "0.625rem",
 				"15sm": "0.9375rem",
 				"3.5xl": "2rem",
 				"4.25xl": "2.36rem",
