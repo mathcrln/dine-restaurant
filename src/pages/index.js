@@ -30,7 +30,7 @@ const IndexPage = () => {
 					heroDescription="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse."
 					heroButton="Book a table"
 					heroButtonDestination="/booking"
-					classProperties="pt-56 laptop:h-90"
+					classProperties="pt-56 pb-44 laptop:pb-0 laptop:h-90"
 				/>
 				<Feature
 					title={

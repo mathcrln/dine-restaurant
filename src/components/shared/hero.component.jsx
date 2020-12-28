@@ -4,7 +4,7 @@ import Header from "../../layout/header";
 import Button from "./button-link.component";
 
 const Hero = ({
-	page,
+	page = "homepage",
 	heroTitle,
 	heroDescription,
 	heroButton = undefined,
@@ -14,11 +14,12 @@ const Hero = ({
 }) => {
 	return (
 		<section
-			className={`${classProperties} laptop:pt-16 
+			className={`laptop:pt-16 
                           bg-codGray text-white bg-no-repeat bg-top bg-cover laptop:bg-center laptop:bg-cover 
                             bg-${page}-hero-mobile
                             laptop:bg-${page}-hero-desktop 
-                            tablet:bg-${page}-hero-tablet 
+							tablet:bg-${page}-hero-tablet 
+							${classProperties}
                             `}
 		>
 			<Container>
@@ -34,7 +35,9 @@ const Hero = ({
 							<Button
 								callToAction={heroButton}
 								destination={`${heroButtonDestination}`}
-								classProperties={`${heroButtonHide}:hidden`}
+								classProperties={
+									heroButtonHide ? `${heroButtonHide}:hidden` : ""
+								}
 							/>
 						) : (
 							""
