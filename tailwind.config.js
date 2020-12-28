@@ -53,18 +53,21 @@ module.exports = {
 		extend: {
 			backgroundImage: (theme) => ({
 				"homepage-hero-desktop":
-					"url('../assets/homepage/hero-bg-desktop.jpg')",
-				"homepage-hero-tablet": "url('../assets/homepage/hero-bg-tablet.jpg')",
-				"homepage-hero-mobile": "url('../assets/homepage/hero-bg-mobile.jpg')",
+					"url('../assets/homepage/hero-bg-desktop@2x.jpg')",
+				"homepage-hero-tablet":
+					"url('../assets/homepage/hero-bg-tablet@2x.jpg')",
+				"homepage-hero-mobile":
+					"url('../assets/homepage/hero-bg-mobile@2x.jpg')",
 				"reservation-cta-desktop":
-					"url('../assets/homepage/ready-bg-desktop.jpg')",
+					"url('../assets/homepage/ready-bg-desktop@2x.jpg')",
 				"reservation-cta-mobile":
-					"url('../assets/homepage/ready-bg-mobile.jpg')",
+					"url('../assets/homepage/ready-bg-mobile@2x.jpg')",
 				"reservation-cta-tablet":
-					"url('../assets/homepage/ready-bg-tablet.jpg')",
-				"booking-hero-desktop": "url('../assets/booking/hero-bg-desktop.jpg')",
-				"booking-hero-tablet": "url('../assets/booking/hero-bg-tablet.jpg')",
-				"booking-hero-mobile": "url('../assets/booking/hero-bg-mobile.jpg')",
+					"url('../assets/homepage/ready-bg-tablet@2x.jpg')",
+				"booking-hero-desktop":
+					"url('../assets/booking/hero-bg-desktop@2x.jpg')",
+				"booking-hero-tablet": "url('../assets/booking/hero-bg-tablet@2x.jpg')",
+				"booking-hero-mobile": "url('../assets/booking/hero-bg-mobile@2x.jpg')",
 			}),
 			fontSize: {
 				"15sm": "0.9375rem",
